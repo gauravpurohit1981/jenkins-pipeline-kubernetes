@@ -123,7 +123,7 @@ pipeline {
         // The commented out parameters are for optionally using them in the pipeline.
         // In this example, the parameters are loaded from file ${JENKINS_HOME}/parameters.groovy later in the pipeline.
         // The ${JENKINS_HOME}/parameters.groovy can be a mounted secrets file in your Jenkins container.
-        
+ /*       
         string (name: 'DOCKER_REG',       defaultValue: 'ccsrepository.azurecr.io',                   description: 'Docker registry')
         string (name: 'DOCKER_TAG',       defaultValue: 'dev',                                     description: 'Docker tag')
         string (name: 'DOCKER_USR',       defaultValue: 'ccsrepository',                                   description: 'Your helm repository user')
@@ -132,7 +132,8 @@ pipeline {
         string (name: 'HELM_REPO',        defaultValue: 'https://ccsrepository.azurecr.io/ccsrepository', description: 'Your helm repository')
         string (name: 'HELM_USR',         defaultValue: 'ccsrepository',                                   description: 'Your helm repository user')
         string (name: 'HELM_PSW',         defaultValue: '7ssVLmQtG/0j16cYl/2tvNFnsrTiaBq9',)
-            }
+   */
+   }
 
     // In this example, all is built and run from the master
     agent { node { label 'master' } }
