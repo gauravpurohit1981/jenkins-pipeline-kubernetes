@@ -131,8 +131,8 @@ pipeline {
         string (name: 'IMG_PULL_SECRET',  defaultValue: 'docker-reg-secret',                       description: 'The Kubernetes secret for the Docker registry (imagePullSecrets)') 
         string (name: 'HELM_REPO',        defaultValue: 'https://ccsrepository.azurecr.io/ccsrepository', description: 'Your helm repository')
         string (name: 'HELM_USR',         defaultValue: 'ccsrepository',                                   description: 'Your helm repository user')
-        string (name: 'HELM_PSW',         defaultValue: '7ssVLmQtG/0j16cYl/2tvNFnsrTiaBq9', 
-    }
+        string (name: 'HELM_PSW',         defaultValue: '7ssVLmQtG/0j16cYl/2tvNFnsrTiaBq9',)
+            }
 
     // In this example, all is built and run from the master
     agent { node { label 'master' } }
