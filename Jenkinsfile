@@ -129,7 +129,7 @@ pipeline {
         string (name: 'DOCKER_USR',       defaultValue: 'ccsrepository',                                   description: 'Your helm repository user')
         string (name: 'DOCKER_PSW',       defaultValue: '7ssVLmQtG/0j16cYl/2tvNFnsrTiaBq9',                                description: 'Your helm repository password')
         string (name: 'IMG_PULL_SECRET',  defaultValue: 'docker-reg-secret',                       description: 'The Kubernetes secret for the Docker registry (imagePullSecrets)') 
-        string (name: 'HELM_REPO',        defaultValue: 'https://ccsrepository.azurecr.io/ccsrepository', description: 'Your helm repository')
+        string (name: 'HELM_REPO',        defaultValue: 'https://ccsrepository.azurecr.io/acme', description: 'Your helm repository')
         string (name: 'HELM_USR',         defaultValue: 'ccsrepository',                                   description: 'Your helm repository user')
         string (name: 'HELM_PSW',         defaultValue: '7ssVLmQtG/0j16cYl/2tvNFnsrTiaBq9',)
    
